@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Bom</title>
+    <link rel="stylesheet" href="bom.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Tebak Bom</h1>
+        <p>Tebak di mana bom tersembunyi! Pilih kotak, dan hindari bom untuk menang.</p>
+        <div id="grid" class="grid"></div>
+        <button onclick="startGame()">Mulai Ulang</button>
+        <div id="message" class="message"></div>
+    </div>
+
+    <!-- Musik Latar dan Efek Suara -->
+    <audio id="backgroundMusic" loop>
+        <source src="bom.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+    <audio id="bombSound">
+        <source src="bomb.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+
+    <script src="bom.js"></script>
+</body>
+</html>

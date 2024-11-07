@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tembak Balon</title>
+    <link rel="stylesheet" href="balon.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Tembak Balon</h1>
+        <p>Klik balon yang muncul untuk mendapatkan skor!</p>
+        <div class="game-area" id="gameArea"></div>
+        <p id="score">Skor: 0</p>
+        <button id="restartButton">Mulai Ulang</button>
+    </div>
+
+    <audio id="balloonSound">
+        <source src="balon.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung audio.
+    </audio>
+
+    <script src="balon.js"></script>
+</body>
+</html>

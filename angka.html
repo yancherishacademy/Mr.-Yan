@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Angka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Game Tebak Angka</h1>
+        <p>Tebak angka dari 1 hingga 100:</p>
+        <div class="input-container">
+            <input type="number" id="guessInput" min="1" max="100" placeholder="Masukkan angka">
+        </div>
+        <audio id="gameMusic" loop>
+            <source src="angka.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+            <button onclick="guessNumber()">
+                <img src="https://cdn-icons-png.flaticon.com/512/1040/1040234.png" alt="Tebak">
+            </button>
+        </div>
+        <div class="result" id="resultMessage"></div>
+    </div>
+
+    <script src="angka.js"></script>
+   
+</body>
+</html>
+
+
